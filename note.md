@@ -23,5 +23,35 @@ $$
 
 
 
+## CH1 非线性优化
 
+### 非线性优化的世界
+
+#### 问题的一般形式
+
+$$
+\begin{array}{l}{\min f_{0}(x)} \\ {\text { s.t. } f_{j}(x) \& 0, \quad j=1 \ldots m} \\ {x \in Q}\end{array}
+$$
+
+其中
+$$
+\mathscr{F}=\left\{x \in Q | f_{j}(x) \leq 0, j=1 \ldots m\right\}
+$$
+称为问题的可行集
+
+常见的类别包括：
+
+- 有约束问题:$\mathscr{F} \nsubseteq \mathbb{R}^{n}$ .
+
+- 无约束问题:$\mathscr{F}=\mathbb{R}^{n}​$.
+
+- 平滑问题: all fj (·) are differentiable.
+
+- 非平滑问题: there are several nondifferentiable components fk (·).
+
+- 线性约束问题: 约束函数是仿射的:
+
+  $$
+  f_{j}(x)=\sum_{i=1}^{n} a_{j}^{(i)} x^{(i)}+b_{j} \equiv\left\langle a_{j}, x\right\rangle+ b_{j}, j=1 \ldots m
+  $$
 
